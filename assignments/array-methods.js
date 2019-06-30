@@ -60,6 +60,7 @@ let fullName = [];
 //     fullName.push((runners[i].first_name) + ' ' + (runners[i].last_name));
 // }
 runners.forEach(fullName);
+function fullName()
 console.log(fullName.sort());
 
 // ==== Challenge 2: Use .map() ====
