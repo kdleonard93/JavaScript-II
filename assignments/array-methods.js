@@ -126,12 +126,12 @@ console.log(bigDonations.sort());
 
 // Problem 3: The company skinte has been dealing with shady partners and we will like to exclude anyone who works there for the next event. Map out a new array without thoes reps.
 
-let badCompany = [];
+let goodCompany = [];
 
-let notInvited = runners.map((notBanned) => {
+let invited = runners.map((notBanned) => {
     if (notBanned.company_name != 'Skinte') {
-        return badCompany.push(notBanned.first_name + ' ' + notBanned.last_name);
+        return goodCompany.push(notBanned.first_name + ' ' + notBanned.last_name);
     }
 });
 
-console.log(badCompany);
+console.log(goodCompany);
