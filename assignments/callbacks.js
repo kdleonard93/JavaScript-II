@@ -81,9 +81,15 @@ let cb = function (item, list) {
 console.log(cb('eggs', ['bacon', 'eggs', 'cheese']));
 
 /* STRETCH PROBLEM */
-
-function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-}
+
+  /*found a different way to get rid of duplicates thats easier for me to understand*/
+const array = [1, 1, 2, 2, 3, 3];
+
+const uniqueArray = new Set(array);
+
+const noDupps = [...uniqueArray];
+
+console.log(noDupps);
